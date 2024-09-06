@@ -4,6 +4,8 @@ services:
     image: event-manager:0.1
     container_name: event_manager
     restart: always
+    volumes:
+      - .db_data/db.sqlite3:/db.sqlite3
     ports:
       - "8000:8000"
     networks:
