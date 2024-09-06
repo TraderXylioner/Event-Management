@@ -4,7 +4,7 @@
 
 ``` bash
 poetry export -f requirements.txt --output requirements.txt
-docker build -t event-manager:1.0 .
+docker build -t event-manager:0.1 .
 docker-compose up
 ```
 
