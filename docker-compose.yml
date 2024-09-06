@@ -1,0 +1,14 @@
+version: '3'
+services:
+  event-manager:
+    image: event-manager:latest
+    container_name: event_manager
+    restart: always
+    ports:
+      - "8000:8000"
+    networks:
+      - network
+
+
+networks:
+  network:
